@@ -16,5 +16,33 @@ namespace Osu_Helper
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// run Osu!
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonOsu_Click(object sender, EventArgs e)
+        {
+            //run osu!
+        }
+        
+        /// <summary>
+        /// exit program
+        /// </summary>
+        private void exitHelper()
+        {
+            this.Close();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            exitHelper();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exitHelper();
+        }
     }
 }
