@@ -9,6 +9,9 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         strs = margs.split('=')
         SongId = strs[1]
         print "SongIdGet:",SongId
+        cmd = 'OsuSongDownloader '
+        cmd += SongId
+        os.system(cmd)
         self.do_action("receive Song,Id = :",SongId)
 
     def do_POST(self):
